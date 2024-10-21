@@ -1,0 +1,7 @@
+<video autoplay></video>
+<script>
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(stream => document.querySelector('video').srcObject = stream)
+    .catch(err => console.error("Ошибка доступа к камере:", err));
+</script>
+<br> Камера </br>
